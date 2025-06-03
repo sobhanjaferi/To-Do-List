@@ -1,23 +1,19 @@
 let addItem = document.getElementById("input_add");
 let button = document.getElementById("button");
 let listItems = document.getElementById("list_items");
-// let closeIcon = document.getElementById("close_icon");
 
 button.addEventListener("click",()=>{
-    let newItem = document.createElement("li");
+    listItems.style.display = "inline"
 
-    // closeIcon.style.display = "block";
+    let newItem = document.createElement("li");
     let newItemText = document.createTextNode(addItem.value);
 
-    newItem.style.borderBottom = "2px solid #0984e3"
-    newItem.style.padding = "10px"
+    newItem.style.borderBottom = "2px solid #0984e3";
+    newItem.style.padding = "10px";
+    newItem.style.marginRight = "15px";    
 
-    newItem.appendChild(newItemText)
-    listItems.appendChild(newItem)
+    newItem.appendChild(newItemText);
+    listItems.appendChild(newItem);
 
-    addItem.value = ""
+    addItem.value = "";
 })
-
-// closeIcon.addEventListener("click", ()=>{
-//     newItem.style.display = "none"
-// })
