@@ -11,7 +11,7 @@ button.addEventListener("click",()=>{
     let closeIcon = document.createElement("i");
 
     let newItemText = document.createTextNode(addItem.value);
-    let newCloseIcon = document.createTextNode("⨉")
+    let newCloseIcon = document.createTextNode("✅")
 
     closeIcon.appendChild(newCloseIcon);
     newItem.appendChild(newItemText);
@@ -22,10 +22,9 @@ button.addEventListener("click",()=>{
 
     closeIcon.addEventListener("click",()=>{
 
-        listItemsHistoreContainer.style.display = "flex"
         closeIcon.style.display = "none"
+        listItemsHistoreContainer.style.display = "flex"
         newItem.style.borderBottom = "2px dashed black"
         listItemsHistore.appendChild(newItem);
-        
     })
 })
