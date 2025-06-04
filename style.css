@@ -15,13 +15,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .container{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 400px;
+    max-width: 600px;
+    width: 90%;
     margin: 10px;
     margin-top: 100px;
     background-color: rgba(255, 255, 255, 0.784);
@@ -30,30 +32,38 @@ body{
 }
 
 h1{
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 10px 15px;
     letter-spacing: 2px;
     font-weight: bold;
     color: #00508d;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     border-bottom: 4px solid #00508d;
+}
+
+p{
+    width: 90%;
+    direction: rtl;
+    font-size: 0.9em;
+    margin-bottom: 50px;
+    color: #00508d;
 }
 
 .add_Packaje{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    max-width: 350px;
     width: 95%;
     margin-bottom: 50px;
     position: relative;
-    background-color: red;
 }
 
 input{
     border: 1px solid #0984e3;
     border-radius: 40px;
     padding: 8px;
-    padding-right: 65px;
+    padding-right: 70px;
     width: 80%;
     color: black;
     font-weight: bold;
@@ -110,4 +120,44 @@ button:active{
     top: 5px;
     cursor: pointer;
     display: none;
+}
+
+li{
+    border-bottom: 2px solid #00508d;
+    padding: 10px;
+    margin-right: 20px;
+    position: relative;
+}
+i{
+    position: absolute;
+    left: 5px;
+}
+
+.histore_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: rgb(211, 211, 211);
+    max-width: 400px;
+    width: 50%;
+    padding: 10px;
+    direction: rtl;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    display: none;
+}
+
+#list_items_histore{
+    padding: 10px;
+    width: 90%;
+}
+
+h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
 }
